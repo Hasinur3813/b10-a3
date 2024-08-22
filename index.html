@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,10 +37,11 @@
         font-family: "Manrope", sans-serif;
       }
       .header {
-        /* background: linear-gradient(
-          0deg rgb(255, 255, 255),
-          rgba(255, 255, 255, 0) 100%
-        ); */
+        background: linear-gradient(
+          0deg,
+          rgb(255 255 255),
+          rgb(241 241 241) 100%
+        );
       }
     </style>
 
@@ -65,7 +66,7 @@
 
   <body class="manrope">
     <!-- header area -->
-    <header class="header bg-primaryBg">
+    <header class="header">
       <div class="container mx-auto">
         <nav>
           <div class="navbar">
@@ -217,8 +218,80 @@
     </header>
 
     <!-- main area -->
-    <main>
-      <div class="container"></div>
+    <main class="bg-primaryBg">
+      <div class="container mx-auto px-3 sm:px-0">
+        <section class="py-16">
+          <img
+            class="hidden lg:block -ms-3 mb-2"
+            src="./assets/Vector.png"
+            alt="vector.png"
+          />
+
+          <!-- main content container-->
+          <div
+            class="flex justify-center items-center flex-col lg:flex-row gap-9"
+          >
+            <!-- content box 1 -->
+            <div
+              class="lg:w-1/2 mx-auto w-full space-y-6 text-center lg:text-left"
+            >
+              <a
+                class="btn bg-white hover:bg-primaryColor rounded-3xl px-8"
+                href="#"
+                ><i class="fa-solid fa-arrow-right-long"></i>
+                <span class="text-base font-bold text-darkGray"
+                  >About Us</span
+                ></a
+              >
+              <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+                We design thoughtful, liveable spaces
+              </h1>
+              <p class="text-base font-medium text-darkGray">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+
+              <div class="flex gap-3 flex-col md:flex-row lg:flex-col">
+                <div
+                  class="flex justify-center items-center rounded-2xl p-6 bg-white gap-4 text-left"
+                >
+                  <img src="./assets/commercial.png" alt="photo.png" />
+
+                  <div>
+                    <h3 class="text-xl text-darkGray">Commercial</h3>
+                    <p class="text-base text-offWhite mt-2">
+                      The barn house captivates with its blen of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex justify-center items-center rounded-2xl p-6 bg-white gap-4 text-left"
+                >
+                  <img src="./assets/residential.png" alt="photo.png" />
+                  <div>
+                    <h3 class="text-xl text-darkGray">Residential</h3>
+                    <p class="text-base text-offWhite mt-2">
+                      The barn house captivates with its blen of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- image is here -->
+            <div class="lg:w-auto lg:h-auto md:h-96 w-full h-56">
+              <img
+                class="object-cover w-full h-full rounded-xl"
+                src="./assets/Rectangle.png"
+                alt="photo.png"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- footer area -->
