@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisy UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom style -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      .header {
+        /* background: linear-gradient(
+          0deg rgb(255, 255, 255),
+          rgba(255, 255, 255, 0) 100%
+        ); */
+      }
+    </style>
+
+    <!-- tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#ABEF5F",
+              darkColor: "#212121",
+              darkGray: "#494949",
+              offWhite: "#737373",
+              primaryBg: "#f4f4f4",
+              btnBg: "rgba(171, 239, 95, 0.5);",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="manrope">
+    <!-- header area -->
+    <header class="header bg-primaryBg">
+      <div class="container mx-auto">
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-xl">
+                <div
+                  class="w-8 h-8 rounded-full bg-primaryColor text-xl flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-arrow-down-long -rotate-[150deg]"></i>
+                </div>
+                <span class="md:text-3xl font-extrabold">Rinterio</span>
+              </a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a class="text-base text-darkColor font-extrabold" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-base hover:text-darkColor text-offWhite"
+                    href="#"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-base hover:text-darkColor text-offWhite"
+                    href="#"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-base hover:text-darkColor text-offWhite"
+                    href="#"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-base hover:text-darkColor text-offWhite"
+                    href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+              <div
+                class="hidden md:flex gap-4 me-4 justify-center items-center"
+              >
+                <div
+                  class="w-12 h-12 rounded-full flex justify-center items-center bg-white cursor-pointer hover:bg-primaryColor duration-300"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div
+                  class="hidden md:flex w-12 h-12 rounded-full bg-white justify-center items-center cursor-pointer hover:bg-primaryColor duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              <!-- consult button -->
+              <a
+                class="hidden md:flex btn bg-primaryColor rounded-3xl hover:bg-primaryColor lg:px-5 lg:py-3 lg:h-auto"
+                ><span class="md:text-xl font-extrabold text-darkColor"
+                  >Book Consult</span
+                >
+                <div
+                  class="w-6 h-6 md:w-8 md:h-8 rounded-full bg-darkColor md:text-xl flex justify-center items-center"
+                >
+                  <i
+                    class="fa-solid fa-arrow-down-long -rotate-[150deg] text-white"
+                  ></i>
+                </div>
+              </a>
+
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost lg:hidden ms-3 bg-white rounded-full w-12 h-12 border-2 border-[rgb(233,233,233)]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -left-40"
+                >
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero area -->
+
+        <section class="py-16">
+          <div class="hero">
+            <div class="hero-content flex-col">
+              <img src="./assets/banner.png" />
+              <div class="text-center">
+                <h1 class="text-3xl md:text-6xl font-extrabold text-darkColor">
+                  A barn house of this design has a<br />
+                  striking appearance
+                </h1>
+                <p class="py-6 text-base text-darkGray">
+                  The barn house captivates with its blend of rustic charm and
+                  modern <br />
+                  sophistication, featuring weathered wood, sleek metal accents,
+                  and large windows that flood the space with natural light.
+                </p>
+                <button class="btn bg-btnBg rounded-3xl w-full sm:w-auto">
+                  <span class="text-xl text-darkColor">View Details</span>
+                  <div
+                    class="w-8 h-8 rounded-full bg-primaryColor text-xl flex justify-center items-center"
+                  >
+                    <i class="fa-solid fa-arrow-down-long -rotate-[150deg]"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <!-- main area -->
+    <main>
+      <div class="container"></div>
+    </main>
+
+    <!-- footer area -->
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
